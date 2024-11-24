@@ -30,5 +30,24 @@
             "languages": "Languages",
             "frameworks": "Frameworks"
         }
+    },
+    "form": {
+        "name": {
+            "label": "Enter your name:",
+            "placeholder": "John Doe"
+        },
+        "email": {
+            "label": "Enter your email:",
+            "placeholder": "john@example.com"
+        },
+        "subject": {
+            "label": "Enter the subject:",
+            "placeholder": "Subject"
+        },
+        "message": {
+            "label": "Enter your message:",
+            "placeholder": "Your message here..."
+        },
+        "submit": "Send"
     }
 }

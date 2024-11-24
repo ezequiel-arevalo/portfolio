@@ -31,5 +31,24 @@
             "languages": "Lenguajes",
             "frameworks": "Frameworks"
         }
+    },
+    "form": {
+        "name": {
+            "label": "Introduce tu nombre:",
+            "placeholder": "Juan Pérez"
+        },
+        "email": {
+            "label": "Introduce tu correo electrónico:",
+            "placeholder": "juan@ejemplo.com"
+        },
+        "subject": {
+            "label": "Introduce el asunto:",
+            "placeholder": "Asunto"
+        },
+        "message": {
+            "label": "Introduce tu mensaje:",
+            "placeholder": "Tu mensaje aquí..."
+        },
+        "submit": "Enviar"
     }
 }
