@@ -1,0 +1,34 @@
+{
+    "header": {
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "footer": {
+        "github": "Ezequiel Arevalo's GitHub",
+        "linkedin": "Ezequiel Arevalo's LinkedIn",
+        "email": "Send an email to Ezequiel Arevalo",
+        "copyright": "Copyright © 2024 - All rights reserved"
+    },
+    "view-projects": {
+        "title": "My Projects"
+    },
+    "asidebar": {
+        "filters": "Filters",
+        "status": {
+            "title": "By Status",
+            "options": {
+                "inProgress": "In Progress",
+                "finished": "Finished"
+            }
+        },
+        "year": {
+            "title": "By Year"
+        },
+        "technology": {
+            "title": "By Technology",
+            "languages": "Languages",
+            "frameworks": "Frameworks"
+        }
+    }
+}

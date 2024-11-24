@@ -1,12 +1,12 @@
-function App() {
+import React from 'react';
+import { AppRouter } from '@/router/AppRouter';
+import { Loader } from './components/Loader';
+import './i18n';
 
+export const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
-  )
+    <React.Suspense fallback={<Loader />}>
+      <AppRouter />
+    </React.Suspense>
+  );
 }
-
-export default App

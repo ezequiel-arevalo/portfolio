@@ -1,0 +1,35 @@
+{
+    "header": {
+        "greeting": "Hola",
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "github": "GitHub de Ezequiel Arevalo",
+        "linkedin": "LinkedIn de Ezequiel Arevalo",
+        "email": "Enviar un correo a Ezequiel Arevalo",
+        "copyright": "Copyright © 2024 - Todos los derechos reservados"
+    },
+    "view-projects": {
+        "title": "Mis Proyectos"
+    },
+    "asidebar": {
+        "filters": "Filtros",
+        "status": {
+            "title": "Por Estado",
+            "options": {
+                "inProgress": "En Proceso",
+                "finished": "Terminado"
+            }
+        },
+        "year": {
+            "title": "Por Año"
+        },
+        "technology": {
+            "title": "Por Tecnología",
+            "languages": "Lenguajes",
+            "frameworks": "Frameworks"
+        }
+    }
+}
