@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { House, LayoutGrid, Mail, Menu, X } from "lucide-react";
+import { House, LayoutGrid, Mail, Menu, User, X } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LangSwitcher";
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { useTranslation } from 'react-i18next';
@@ -43,6 +43,12 @@ export const Header = () => {
                             </Link>
                         </li>
                         <li>
+                            <Link to={"/about"}>
+                                <User width={20} />
+                                <span>{t('header.about')}</span> {/* Traducción de "About" */}
+                            </Link>
+                        </li>
+                        <li>
                             <Link to={"/projects"}>
                                 <LayoutGrid width={20} />
                                 <span>{t('header.projects')}</span> {/* Traducción de "Projects" */}
@@ -71,6 +77,12 @@ export const Header = () => {
                         <Link to={"/"}>
                             <House width={20} />
                             <span>{t('header.home')}</span> {/* Traducción de "Home" */}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={"/about"}>
+                            <User width={20} />
+                            <span>{t('header.about')}</span> {/* Traducción de "About" */}
                         </Link>
                     </li>
                     <li>

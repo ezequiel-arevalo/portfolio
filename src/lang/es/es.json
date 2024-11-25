@@ -1,7 +1,7 @@
 {
     "header": {
-        "greeting": "Hola",
         "home": "Inicio",
+        "about": "Sobre Mi",
         "projects": "Proyectos",
         "contact": "Contacto"
     },

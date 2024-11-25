@@ -4,6 +4,7 @@ import { HomePage } from "@/pages/home/HomePage";
 import { ErrorPage } from "@/pages/error/ErrorPage";
 import { ProjectPage } from "@/pages/projects/ProjectPage";
 import { ContactPage } from "@/pages/contact/contactPage";
+import { AboutPage } from "@/pages/about/AboutPage";
 
 export const AppRouter = () => {
     return (
@@ -22,6 +23,9 @@ export const AppRouter = () => {
 
                 {/* Contact Page */}
                 <Route path="/contact" element={<ContactPage />} />
+
+                {/* Contact Page */}
+                <Route path="/about" element={<AboutPage />} />
 
             </Route>
         </Routes>
