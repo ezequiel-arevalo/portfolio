@@ -1,16 +1,11 @@
-import { EducationSection } from "./components/EducationSection"
+import HeroSection from "./components/HeroSection"
+import ReviewSection from "./components/ReviewSection"
+
 export const HomePage = () => {
     return (
         <>
-            <EducationSection />
+            <HeroSection />
+            <ReviewSection />
         </>
-        // <ul>
-        //     <li>HeroSection</li>
-        //     <li>About Me</li>
-        //     <li>Education</li>
-        //     <li>RoadMap</li>
-        //     <li>Events</li>
-        //     <li>Reseñas</li>
-        // </ul>
     )
 }

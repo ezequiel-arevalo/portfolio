@@ -12,7 +12,8 @@
         "copyright": "Copyright © 2024 - All rights reserved"
     },
     "view-projects": {
-        "title": "My Projects"
+        "title": "My Projects",
+        "noProjectsMessage": "Aún no tengo proyectos de eso hecho, próximamente..."
     },
     "asidebar": {
         "filters": "Filters",
@@ -29,7 +30,9 @@
         "technology": {
             "title": "By Technology",
             "languages": "Languages",
-            "frameworks": "Frameworks"
+            "frameworks": "Frameworks",
+            "projectType": "By Type",
+            "platforms": "Platforms"
         }
     },
     "form": {
@@ -50,5 +53,150 @@
             "placeholder": "Your message here..."
         },
         "submit": "Send"
+    },
+    "about": {
+        "title": "About Me",
+        "quote": {
+            "text": "You are your main repository: Reduce dependencies, constantly update yourself, and never stop growing.",
+            "author": "Personal quote: reflection on life and programming"
+        },
+        "skills": {
+            "title": "Skills",
+            "technical": {
+                "title": "Technical",
+                "frontend": "Frontend: React, JavaScript, HTML/CSS, Tailwind CSS.",
+                "tools": "Tools: Git, Figma, UI/UX design tools."
+            },
+            "soft": {
+                "title": "Soft Skills",
+                "items": [
+                    "Self-criticism and focus on continuous improvement.",
+                    "Self-taught learning ability.",
+                    "Collaboration in group projects and good communication.",
+                    "Motivation to solve problems and facilitate processes."
+                ]
+            },
+            "methods": {
+                "title": "Agile methodologies",
+                "items": [
+                    "Scrum",
+                    "Kanban"
+                ]
+            },
+            "lang": {
+                "title": "Languages",
+                "items": [
+                    "Español - Nativo",
+                    "English - Basic (A1)"
+                ]
+            }
+        },
+        "education": {
+            "title": "Education and Future Plans",
+            "certifications": {
+                "title": "Certifications",
+                "items": [
+                    "Higher Technical Degree in Web Design and Programming",
+                    "Professional in Digital Media Management",
+                    "Assistant in Development and New Digital Business"
+                ]
+            },
+            "future": {
+                "title": "First work experience",
+                "items": [
+                    "Develop some startups",
+                    "Gain work experience",
+                    "Carry out complex projects",
+                    "Improve my skills",
+                    "Participate in events"
+                ]
+            },
+            "books": {
+                "title": "Recommended Books",
+                "items": [
+                    "Clean Code - Robert C. Martin",
+                    "Design Patterns - Gang of Four",
+                    "The Pragmatic Programmer"
+                ]
+            },
+            "languages": {
+                "title": "Languages",
+                "items": [
+                    "Spanish - Native",
+                    "English - Basic (A1)"
+                ]
+            },
+            "courses": {
+                "title": "Completed Courses",
+                "items": [
+                    {
+                        "title": "Visual Studio Code: Improve Your Coding Speed",
+                        "url": "https://cursos.devtalles.com/certificates/xftag3xxzq"
+                    },
+                    {
+                        "title": "Modern JavaScript: Guide to Master the Language",
+                        "url": "https://cursos.devtalles.com/certificates/gtctx0xz4m"
+                    },
+                    {
+                        "title": "GIT + GitHub: A Complete Version Control System from Scratch",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    },
+                    {
+                        "title": "TypeScript: Your Complete Guide and Reference",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    },
+                    {
+                        "title": "React: From Zero to Expert (Hooks and MERN)",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    },
+                    {
+                        "title": "React PRO: Take Your Foundations to the Next Level",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    }
+                ]
+            }
+        },
+        "tools": {
+            "title": "Tools and Resources",
+            "development": {
+                "title": "Development Tools",
+                "items": {
+                    "figma": "Figma - Collaborative UI/UX design and prototyping.",
+                    "miro": "Miro - Online collaborative whiteboard for diagrams and brainstorming.",
+                    "trello": "Trello - Project management with boards, lists, and cards.",
+                    "slack": "Slack - Real-time team communication and collaboration."
+                }
+            },
+            "educational": {
+                "title": "Educational Resources",
+                "items": {
+                    "mdn": "MDN Web Docs - Complete documentation on web technologies.",
+                    "roadmap": "RoadMap.sh - Interactive roadmaps for learning web development technologies.",
+                    "frontendMentor": "Frontend Mentor - Challenges to improve your frontend design and development skills.",
+                    "leetcode": "LeetCode - Platform to improve your programming skills through algorithm challenges."
+                }
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "questions": {
+                "current": {
+                    "question": "What are you currently working on?",
+                    "answer": "Currently, I am strengthening my programming foundations and logic, with the goal of facing new challenges more easily in the future. Additionally, I am constantly working on projects and plan to launch startups based on my projects soon."
+                },
+                "motivation": {
+                    "question": "What motivates you in your career?",
+                    "answer": "I'm motivated by learning new things, solving problems, and making people's lives easier through technology. Creating useful and accessible tools is my main goal."
+                },
+                "future": {
+                    "question": "What would you like to study in the future?",
+                    "answer": "I would like to continue my education in areas such as Systems Analysis or Systems Engineering."
+                },
+                "ai": {
+                    "question": "An unpopular opinion about AI usage?",
+                    "answer": "In my case, as a junior developer just starting out, I believe having solid foundations is key. AI usage doesn't offer me long-term benefits because if I don't do it myself, how can I truly understand how it works? For now, I prefer to use AI to teach me, inform me about errors, advise me, generate assets, images, and document my code based on JSDocs."
+                }
+            }
+        }
     }
 }

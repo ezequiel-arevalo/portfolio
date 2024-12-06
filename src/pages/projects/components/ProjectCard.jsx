@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, FileText } from "lucide-react";
+import { Github, Earth } from "lucide-react";
 
 export const ProjectCard = ({ project, openModal }) => {
     return (
@@ -50,8 +50,8 @@ export const ProjectCard = ({ project, openModal }) => {
                         className="btn btn-outline btn-sm"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <FileText className="w-4 h-4 mr-1" />
-                        Paper
+                        <Earth className="w-4 h-4 mr-1" />
+                        Sitio
                     </a>
                 </div>
             </div>

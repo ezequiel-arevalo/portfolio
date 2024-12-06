@@ -1,110 +1,72 @@
 import { useTranslation } from 'react-i18next';
+import Filter from './Filter';
+import { status, date, type, tech, framework, platforms } from './filters';
 
 export const AsideBar = ({
     selectedYear,
-    selectedCategory,
     selectedTechnologies,
     selectedStatus,
+    selectedProjectTypes,
+    selectedPlatforms,
     handleYearFilter,
-    handleCategoryFilter,
     handleTechnologyFilter,
     handleStatusFilter,
+    handleProjectTypeFilter,
+    handlePlatformFilter
 }) => {
     const { t } = useTranslation();
 
     return (
         <aside className="p-4 rounded-lg card bg-base-100 shadow-xl">
             {/* Título de filtros con animación */}
-            <h2 className="text-xl font-bold mb-4">
-                {t('asidebar.filters')}
-            </h2>
+            <h2 className="text-xl text-center font-bold">{t('asidebar.filters')}</h2>
 
-            {/* Filtro por Estado */}
-            <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">
-                    {t('asidebar.status.title')}
-                </h3>
-                <div className="flex flex-col">
-                    {["En Proceso", "Terminado"].map((status) => (
-                        <label key={status} className="flex items-center space-x-2">
-                            <input
-                                type="checkbox"
-                                value={status}
-                                onChange={handleStatusFilter}
-                                checked={selectedStatus.includes(status)}
-                                className="checkbox checkbox-sm"
-                            />
-                            <span>{status}</span>
-                        </label>
-                    ))}
-                </div>
-            </div>
+            <div className="divider"></div>
 
-            {/* Filtro por Año */}
-            <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">
-                    {t('asidebar.year.title')}
-                </h3>
-                <div className="flex flex-col">
-                    {["2024", "2023", "2022", "2021"].map((year) => (
-                        <label key={year} className="flex items-center space-x-2">
-                            <input
-                                type="checkbox"
-                                value={year}
-                                onChange={handleYearFilter}
-                                checked={selectedYear.includes(year)}
-                                className="checkbox checkbox-sm"
-                            />
-                            <span>{year}</span>
-                        </label>
-                    ))}
-                </div>
-            </div>
+            {/* Filtros */}
+            <Filter
+                title={t('asidebar.status.title')}
+                options={status}
+                selectedValues={selectedStatus}
+                handleFilter={handleStatusFilter}
+            />
 
-            {/* Filtro por Tecnología */}
-            <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">
-                    {t('asidebar.technology.title')}
-                </h3>
-                <div className="mb-4">
-                    <h4 className="font-medium">
-                        {t('asidebar.technology.languages')}
-                    </h4>
-                    <div className="flex flex-col">
-                        {["HTML", "CSS", "JavaScript", "TypeScript", "PHP"].map((tech) => (
-                            <label key={tech} className="flex items-center space-x-2">
-                                <input
-                                    type="checkbox"
-                                    value={tech}
-                                    onChange={handleTechnologyFilter}
-                                    checked={selectedTechnologies.includes(tech)}
-                                    className="checkbox checkbox-sm"
-                                />
-                                <span>{tech}</span>
-                            </label>
-                        ))}
-                    </div>
-                </div>
-                <div className="mb-4">
-                    <h4 className="font-medium">
-                        {t('asidebar.technology.frameworks')}
-                    </h4>
-                    <div className="flex flex-col">
-                        {["React", "Next.js"].map((tech) => (
-                            <label key={tech} className="flex items-center space-x-2">
-                                <input
-                                    type="checkbox"
-                                    value={tech}
-                                    onChange={handleTechnologyFilter}
-                                    checked={selectedTechnologies.includes(tech)}
-                                    className="checkbox checkbox-sm"
-                                />
-                                <span>{tech}</span>
-                            </label>
-                        ))}
-                    </div>
-                </div>
-            </div>
+            <Filter
+                title={t('asidebar.year.title')}
+                options={date}
+                selectedValues={selectedYear}
+                handleFilter={handleYearFilter}
+            />
+
+            <Filter
+                title={t('asidebar.technology.projectType')}
+                options={type}
+                selectedValues={selectedProjectTypes}
+                handleFilter={handleProjectTypeFilter}
+            />
+
+            {/* Lenguajes */}
+            <Filter
+                title={t('asidebar.technology.languages')}
+                options={tech}
+                selectedValues={selectedTechnologies}
+                handleFilter={handleTechnologyFilter}
+            />
+
+            {/* Filtro por Plataformas */}
+            <Filter
+                title={t('asidebar.technology.frameworks')}
+                options={framework}
+                selectedValues={selectedTechnologies}
+                handleFilter={handleTechnologyFilter}
+            />
+            {/* Filtro por Plataformas */}
+            <Filter
+                title={t('asidebar.technology.platforms')}
+                options={platforms}
+                selectedValues={selectedPlatforms}
+                handleFilter={handlePlatformFilter}
+            />
         </aside>
     );
 };

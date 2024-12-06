@@ -12,7 +12,8 @@
         "copyright": "Copyright © 2024 - Todos los derechos reservados"
     },
     "view-projects": {
-        "title": "Mis Proyectos"
+        "title": "Mis Proyectos",
+        "noProjectsMessage": "Aún no tengo proyectos de eso hecho, próximamente..."
     },
     "asidebar": {
         "filters": "Filtros",
@@ -29,7 +30,9 @@
         "technology": {
             "title": "Por Tecnología",
             "languages": "Lenguajes",
-            "frameworks": "Frameworks"
+            "frameworks": "Frameworks",
+            "projectType": "Por Tipo",
+            "platforms": "Plataformas"
         }
     },
     "form": {
@@ -50,5 +53,150 @@
             "placeholder": "Tu mensaje aquí..."
         },
         "submit": "Enviar"
+    },
+    "about": {
+        "title": "Sobre Mi",
+        "quote": {
+            "text": "Eres tu repositorio principal: Reduce las dependencias, actualízate constantemente y no dejes de crecer.",
+            "author": "Frase propia: reflexión sobre la vida y la programación"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "technical": {
+                "title": "Técnicas",
+                "frontend": "Frontend: React, JavaScript, HTML/CSS, Tailwind CSS.",
+                "tools": "Herramientas: Git, Figma, herramientas de diseño UI/UX."
+            },
+            "soft": {
+                "title": "Blandas",
+                "items": [
+                    "Autocrítica y enfoque en la mejora continua.",
+                    "Capacidad de aprendizaje autodidacta.",
+                    "Colaboración en proyectos grupales y buena comunicación.",
+                    "Motivación por resolver problemas y facilitar procesos."
+                ]
+            },
+            "methods": {
+                "title": "Metodologías ágiles",
+                "items": [
+                    "Scrum",
+                    "Kanban"
+                ]
+            },
+            "lang": {
+                "title": "Idiomas",
+                "items": [
+                    "Español - Nativo",
+                    "English - Básico (A1)"
+                ]
+            }
+        },
+        "education": {
+            "title": "Educación y Planes Futuros",
+            "certifications": {
+                "title": "Certificaciones",
+                "items": [
+                    "Técnico Superior en Diseño y Programación Web",
+                    "Profesional en Gestión de Medios Digitales",
+                    "Asistente en Desarrollo y Nuevos Negocios Digitales"
+                ]
+            },
+            "future": {
+                "title": "Primera experiencia laboral",
+                "items": [
+                    "Desarrollar algunas startups",
+                    "Ganar experiencia laboral",
+                    "Realizar proyectos complejos",
+                    "Mejorar mis habilidades",
+                    "Participar en eventos"
+                ]
+            },
+            "books": {
+                "title": "Libros Recomendados",
+                "items": [
+                    "Clean Code - Robert C. Martin",
+                    "Design Patterns - Gang of Four",
+                    "The Pragmatic Programmer"
+                ]
+            },
+            "languages": {
+                "title": "Idiomas",
+                "items": [
+                    "Español - Nativo",
+                    "Inglés - Básico (A1)"
+                ]
+            },
+            "courses": {
+                "title": "Cursos realizados",
+                "items": [
+                    {
+                        "title": "Visual Studio Code: Mejora tu velocidad para codificar",
+                        "url": "https://cursos.devtalles.com/certificates/xftag3xxzq"
+                    },
+                    {
+                        "title": "JavaScript Moderno: Guía para dominar el lenguaje",
+                        "url": "https://cursos.devtalles.com/certificates/gtctx0xz4m"
+                    },
+                    {
+                        "title": "GIT + GitHub: Todo un sistema de control de versiones de cero",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    },
+                    {
+                        "title": "TypeScript: Tu completa guía y manual de mano",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    },
+                    {
+                        "title": "React: De cero a experto ( Hooks y MERN )",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    },
+                    {
+                        "title": "React PRO: Lleva tus bases al siguiente nivel",
+                        "url": "https://cursos.devtalles.com/certificates/"
+                    }
+                ]
+            }
+        },
+        "tools": {
+            "title": "Herramientas y Recursos",
+            "development": {
+                "title": "Herramientas de Desarrollo",
+                "items": {
+                    "figma": "Figma - Diseño UI/UX colaborativo y creación de prototipos.",
+                    "miro": "Miro - Pizarra colaborativa en línea para diagramas y brainstorming.",
+                    "trello": "Trello - Gestión de proyectos con tableros, listas y tarjetas.",
+                    "slack": "Slack - Comunicación y colaboración en equipo en tiempo real."
+                }
+            },
+            "educational": {
+                "title": "Recursos Educativos",
+                "items": {
+                    "mdn": "MDN Web Docs - Documentación completa sobre tecnologías web.",
+                    "roadmap": "RoadMap.sh - Mapas de ruta interactivos para aprender tecnologías de desarrollo web.",
+                    "frontendMentor": "Frontend Mentor - Desafíos para mejorar tus habilidades en diseño y desarrollo frontend.",
+                    "leetcode": "LeetCode - Plataforma para mejorar tus habilidades de programación a través de retos de algoritmos."
+                }
+            }
+        },
+        "faq": {
+            "title": "Preguntas Frecuentes",
+            "questions": {
+                "current": {
+                    "question": "¿En que estas trabajando actualmente?",
+                    "answer": "Actualmente, me encuentro reforzando mis bases de programación y mi lógica, con el objetivo de enfrentar nuevos retos con mayor facilidad en el futuro. Además, estoy realizando proyectos de manera constante y activa, y tengo la intención de lanzar próximamente startups basadas en mis proyectos."
+                },
+                "motivation": {
+                    "question": "¿Qué te motiva en tu carrera?",
+                    "answer": "Me motiva aprender cosas nuevas, resolver problemas y facilitar la vida de las personas a través de la tecnología. Crear herramientas que sean útiles y accesibles es mi mayor objetivo."
+                },
+                "future": {
+                    "question": "¿Qué te gustaría estudiar mas adelante?",
+                    "answer": "Me gustaría continuar mi formación en áreas como Análisis de Sistemas o Ingeniería en Sistemas."
+                },
+                "ai": {
+                    "question": "¿Una opinión impopular sobre el uso de la IA?",
+                    "answer": "En mi caso, como desarrollador junior y recién comenzando, creo que tener unas buenas bases sólidas es la clave. El uso de la IA no me ofrece beneficios a largo plazo, ya que, si no lo hago yo, ¿cómo puedo entender realmente cómo funciona? Por ahora, prefiero usar la IA para que me enseñe, me informe sobre errores, me aconseje, genere assets, imágenes y documente mi código basándome en JSDocs."
+                }
+            }
+        }
     }
 }

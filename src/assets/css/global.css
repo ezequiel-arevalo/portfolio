@@ -6,20 +6,25 @@
 html,
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 main {
     min-height: 100vh;
 }
 
-.animated-text .letter {
-    display: inline-block;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
+.hover-text {
+    position: relative;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+.hover-text .hovered {
+    display: none;
+}
+
+.hover-text:hover .default {
+    display: none;
+}
+
+.hover-text:hover .hovered {
+    display: inline;
 }
