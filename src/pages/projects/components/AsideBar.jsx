@@ -1,18 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import Filter from './Filter';
-import { status, date, type, tech, framework, platforms } from './filters';
+import { status, date, type, tech, framework } from '@/utils/filters';
 
 export const AsideBar = ({
     selectedYear,
     selectedTechnologies,
     selectedStatus,
     selectedProjectTypes,
-    selectedPlatforms,
     handleYearFilter,
     handleTechnologyFilter,
     handleStatusFilter,
     handleProjectTypeFilter,
-    handlePlatformFilter
 }) => {
     const { t } = useTranslation();
 
@@ -59,13 +57,6 @@ export const AsideBar = ({
                 options={framework}
                 selectedValues={selectedTechnologies}
                 handleFilter={handleTechnologyFilter}
-            />
-            {/* Filtro por Plataformas */}
-            <Filter
-                title={t('asidebar.technology.platforms')}
-                options={platforms}
-                selectedValues={selectedPlatforms}
-                handleFilter={handlePlatformFilter}
             />
         </aside>
     );

@@ -18,7 +18,3 @@ export const tech = [
 export const framework = [
     "React", "Next.js"
 ];
-
-export const platforms = [
-    "Landing Page"
-];

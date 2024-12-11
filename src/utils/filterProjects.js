@@ -5,7 +5,6 @@ export const filterProjects = (projects, filters) => {
         selectedProjectTypes,
         selectedTechnologies,
         selectedStatus,
-        selectedPlatforms,
     } = filters;
 
     return projects.filter((project) => {
@@ -25,11 +24,7 @@ export const filterProjects = (projects, filters) => {
             selectedProjectTypes.length > 0
                 ? selectedProjectTypes.some((type) => project.categories.includes(type))
                 : true;
-        const matchesPlatforms =
-            selectedPlatforms.length > 0
-                ? selectedPlatforms.some((platform) => project.platforms.includes(platform))
-                : true;
 
-        return matchesYear && matchesCategory && matchesTechnologies && matchesStatus && matchesProjectType && matchesPlatforms;
+        return matchesYear && matchesCategory && matchesTechnologies && matchesStatus && matchesProjectType;
     });
 };
