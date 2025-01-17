@@ -1,0 +1,11 @@
+{
+    "Inicio": "Home",
+    "Sobre mí": "About Me",
+    "Proyectos": "Projects",
+    "Contacto": "Contact",
+    "Footer": {
+        "rol": "Web Developer",
+        "texto" : "All right reserved"
+    }
+  }
+  

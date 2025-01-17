@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /admin/
+Allow: /public/
+Sitemap: https://www.ezequiel-arevalo.com/sitemap.xml

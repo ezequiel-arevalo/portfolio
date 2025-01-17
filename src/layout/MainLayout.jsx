@@ -1,20 +1,20 @@
-import { Header } from './Header.jsx';
-import { Outlet } from 'react-router-dom';
-import { Footer } from './Footer.jsx';
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import HomePage from "@/pages/home/HomePage";
 
 export const MainLayout = () => {
-    return (
-        <>
-            {/* Header + Navegation Menú */}
-            <Header />
+  return (
+    <>
+      {/* Header con navegación */}
+      <Header />
 
-            {/* Principal Content of the site */}
-            <main>
-                <Outlet />
-            </main>
+      {/* Contenido principal con secciones */}
+      <main>
+        <HomePage />
+      </main>
 
-            {/* Footer of the site */}
-            <Footer />
-        </>
-    )
-}
+      {/* Footer */}
+      <Footer />
+    </>
+  );
+};
