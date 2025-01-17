@@ -1,32 +1,34 @@
-import { useContext } from 'react';
-import { ThemeContext } from "@/context/ThemeContext";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+import { Code, Github, Linkedin, Instagram } from "lucide-react";
 
 export const Footer = () => {
-  
-  const { t } = useTranslation();  // Hook para traducción
-  const { theme } = useContext(ThemeContext); // Obtener el tema desde el contexto
-  
+  const { t } = useTranslation(); // Hook para traducción
+
   return (
     <footer className="footer footer-center p-10">
       <aside>
+        <Code width={50} height={50} />
 
-        {/* Imagen con animación de rotación */}
-        <img 
-          src={theme === 'dark' ? './img/logo-black.svg' : './img/logo-white.svg'} 
-          alt='logo' 
-          width={100} 
-          height={100} 
-          className='rounded-full shadow-lg mb-5'
-        />
-
-        <p className="font-bold">
-          Ezequiel Arevalo - <span> {t('Footer.rol')} </span>
+        <p className="font-bold flex justify-center">
+          Ezequiel Arevalo - <span className="ml-1"> {t("Footer.rol")} </span>
         </p>
-
-        <p>Copyright © {new Date().getFullYear()} - {t('Footer.texto')}</p>
-
+        <p className="text-center">
+          Copyright © {new Date().getFullYear()} - {t("Footer.texto")}
+        </p>
       </aside>
+      <nav>
+        <div className="grid grid-flow-col gap-4">
+          <a>
+            <Github />
+          </a>
+          <a>
+            <Linkedin />
+          </a>
+          <a>
+            <Instagram />
+          </a>
+        </div>
+      </nav>
     </footer>
   );
 };
