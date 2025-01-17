@@ -17,17 +17,23 @@ export const Footer = () => {
         </p>
       </aside>
       <nav>
-        <div className="grid grid-flow-col gap-4">
-          <a>
-            <Github />
-          </a>
-          <a>
-            <Linkedin />
-          </a>
-          <a>
-            <Instagram />
-          </a>
-        </div>
+        <ul className="grid grid-flow-col gap-4">
+          <li>
+            <a href="https://github.com/ezequiel-arevalo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Github />
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/ezequiel-arevalo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Linkedin />
+            </a>
+          </li>
+          <li>
+            <a href="https://threads.net/ezequie_arevalo" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+              <Instagram />
+            </a>
+          </li>
+        </ul>
       </nav>
     </footer>
   );
