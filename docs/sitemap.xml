@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
   <url>
     <loc>https://www.ezequiel-arevalo.com/</loc>
-    <lastmod>2025-01-17</lastmod> <!-- Update this with the date you last modified the page -->
-    <priority>1.0</priority> <!-- Set priority (1.0 for homepage) -->
+    <lastmod>2025-01-17</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Secciones dentro del index.html -->
+  <url>
+    <loc>https://www.ezequiel-arevalo.com/#inicio</loc>
+    <lastmod>2025-01-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ezequiel-arevalo.com/#aboutme</loc>
+    <lastmod>2025-01-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ezequiel-arevalo.com/#projects</loc>
+    <lastmod>2025-01-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ezequiel-arevalo.com/#contact</loc>
+    <lastmod>2025-01-17</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
-
