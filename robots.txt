@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://www.ezequiel-arevalo.com/sitemap.xml
