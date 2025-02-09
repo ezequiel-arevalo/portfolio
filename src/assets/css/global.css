@@ -4,3 +4,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+#root {
+    position: relative;
+}
+  
+#root::before {
+    content: "";
+    position: fixed; /* El fondo permanece fijo al hacer scroll */
+    top: 0;
+    left: 0;
+    z-index: -2; /* Debe estar detrás de todo el contenido */
+    width: 100vw;
+    height: 100vh;
+    background-color: #18181b; /* Color exacto equivalente a bg-neutral-950 */
+    background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120,119,198,0.3), rgba(255,255,255,0));
+}

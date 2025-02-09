@@ -1,20 +1,27 @@
+import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold text-red-600">404</h1>
-        <h2 className="text-3xl text-black mt-4">Página no encontrada</h2>
-        <p className="mt-4 text-black text-lg">
-          Lo siento, la página que buscas no existe o ha sido eliminada.
-        </p>
-        <div className="mt-6">
-          <Link to="/" className="btn btn-primary">
-            Volver al Inicio
-          </Link>
-        </div>
-      </div>
+    <section
+      className="min-h-screen flex flex-col items-center justify-center text-white px-4"
+      aria-labelledby="error-title"
+      role="region"
+    >
+      <h1 id="error-title" className="text-6xl font-bold mb-4">
+        404
+      </h1>
+      <p className="text-xl mb-8 text-center max-w-md">
+        La página que buscas no existe. Quizá se movió o nunca existió.
+      </p>
+      <Link
+        to="/"
+        className="btn btn-primary text-white font-medium"
+        aria-label="Regresar a la página de inicio"
+      >
+        <ArrowLeft className="mr-2" size={20} />
+        Regresar a Inicio
+      </Link>
     </section>
   );
 };

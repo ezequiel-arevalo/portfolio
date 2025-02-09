@@ -1,9 +1,13 @@
 const Footer = () => {
   return (
-    <footer>
-      <p>Todos los derechos reservados &copy; 2025</p>
+    <footer
+      className="footer footer-center p-4 text-base-content"
+      role="contentinfo"
+      aria-label="Información de copyright"
+    >
+      <small>&copy; {new Date().getFullYear()} Ezequiel Arevalo</small>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

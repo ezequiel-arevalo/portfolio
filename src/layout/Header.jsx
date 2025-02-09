@@ -1,35 +1,68 @@
 import { HashLink as Link } from 'react-router-hash-link';
+import { Menu } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="navbar bg-base-100 shadow-sm sticky top-0 z-50">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" 
-              viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
-                d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+    <header
+      className="drawer sticky top-0 z-50 bg-[#18181b]/60 backdrop-blur-md shadow-sm border border-gray-700/50"
+      role="banner"
+    >
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        {/* Navbar principal */}
+        <div className="navbar w-full">
+          <div className="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-3"
+              className="btn btn-square btn-ghost"
+              aria-label="Abrir menú lateral"
+            >
+              <Menu />
+            </label>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li>
-              <Link smooth to="/#first-section">Primera Sección</Link>
-            </li>
-            <li>
-              <Link to={"/404"}>Error Page</Link>
-            </li>
-          </ul>
+          <div className="mx-2 flex-1 px-2 text-xl">
+            <Link to="/" className="font-bold" aria-label="Inicio - Ezequiel Arevalo">
+              Ezequiel Arevalo
+            </Link>
+          </div>
+          <div className="hidden flex-none lg:block">
+            <nav aria-label="Navegación principal">
+              <ul className="menu menu-horizontal">
+                <li>
+                  <Link smooth to="/">Home</Link>
+                </li>
+                <li>
+                  <Link smooth to="#about-me">Sobre Mi</Link>
+                </li>
+                <li>
+                  <Link smooth to="#projects">Proyectos</Link>
+                </li>
+                <li>
+                  <Link smooth to="#projects">Contacto</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <a className="btn btn-ghost text-xl">Ezequiel Arevalo</a>
       </div>
-      <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="drawer-side">
+        <label
+          htmlFor="my-drawer-3"
+          className="drawer-overlay"
+          aria-label="Cerrar menú lateral"
+        ></label>
+        <ul className="menu min-h-full w-80 p-4 bg-[#18181b]/80 backdrop-blur-md shadow-sm border border-gray-700/50">
           <li>
-            <Link smooth to="/#first-section">Primera Sección</Link>
+            <Link smooth to="/">Home</Link>
           </li>
           <li>
-            <Link to={"/404"}>Error Page</Link>
+            <Link smooth to="#about-me">Sobre Mi</Link>
+          </li>
+          <li>
+            <Link smooth to="#projects">Proyectos</Link>
+          </li>
+          <li>
+            <Link smooth to="#projects">Contacto</Link>
           </li>
         </ul>
       </div>
