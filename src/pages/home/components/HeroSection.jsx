@@ -42,8 +42,16 @@ const HeroSection = () => {
               className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
               role="menu"
             >
-              <li role="menuitem"><a href="/cv-es.pdf">CV Español</a></li>
-              <li role="menuitem"><a href="/cv-en.pdf">CV Inglés</a></li>
+              <li role="menuitem">
+                <a href="/pdf/es/Arevalo_Ezequiel.pdf" download="Arevalo_Ezequiel.pdf" type="application/pdf" rel="noopener noreferrer">
+                  Descargar CV
+                </a>
+              </li>
+              <li role="menuitem">
+                <a href="/pdf/en/Arevalo_Ezequiel.pdf" download="Arevalo_Ezequiel.pdf" type="application/pdf" rel="noopener noreferrer">
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
