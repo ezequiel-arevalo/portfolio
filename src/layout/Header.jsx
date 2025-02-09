@@ -7,6 +7,9 @@ const Header = () => {
       className="drawer sticky top-0 z-50 bg-[#18181b]/60 backdrop-blur-md shadow-sm border border-gray-700/50"
       role="banner"
     >
+      <label htmlFor="my-drawer-3" className="sr-only">
+        Activar menú lateral
+      </label>
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar principal */}
