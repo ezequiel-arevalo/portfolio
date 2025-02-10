@@ -32,16 +32,16 @@ const Header = () => {
             <nav aria-label="Navegación principal">
               <ul className="menu menu-horizontal">
                 <li>
-                  <Link smooth to="/">Home</Link>
-                </li>
-                <li>
-                  <Link smooth to="#about-me">Sobre Mi</Link>
+                  <Link smooth to="#home">Home</Link>
                 </li>
                 <li>
                   <Link smooth to="#projects">Proyectos</Link>
                 </li>
                 <li>
-                  <Link smooth to="#projects">Contacto</Link>
+                  <Link smooth to="#about-me">Sobre Mi</Link>
+                </li>
+                <li>
+                  <Link smooth to="#contact">Contacto</Link>
                 </li>
               </ul>
             </nav>
@@ -56,16 +56,16 @@ const Header = () => {
         ></label>
         <ul className="menu min-h-full w-80 p-4 bg-[#18181b]/80 backdrop-blur-md shadow-sm border border-gray-700/50">
           <li>
-            <Link smooth to="/">Home</Link>
-          </li>
-          <li>
-            <Link smooth to="#about-me">Sobre Mi</Link>
+            <Link smooth to="#home">Home</Link>
           </li>
           <li>
             <Link smooth to="#projects">Proyectos</Link>
           </li>
           <li>
-            <Link smooth to="#projects">Contacto</Link>
+            <Link smooth to="#about-me">Sobre Mi</Link>
+          </li>
+          <li>
+            <Link smooth to="#contact">Contacto</Link>
           </li>
         </ul>
       </div>
