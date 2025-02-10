@@ -2,7 +2,6 @@ import { projects } from "@/utilities/projects";
 import { Github, Send } from "lucide-react";
 
 const ProjectsSection = () => {
-
   // Función que abre la modal del proyecto correspondiente
   const handleCardClick = (projectId) => {
     document.getElementById(`modal-${projectId}`).showModal();
@@ -18,6 +17,7 @@ const ProjectsSection = () => {
         Algunos de los proyectos en los que he trabajado, enfocados en
         funcionalidad, diseño y rendimiento.
       </p>
+      
       {/* Grid de Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {projects.map((project) => (
@@ -38,6 +38,15 @@ const ProjectsSection = () => {
             <div className="card-body">
               <h2 className="card-title">{project.name}</h2>
               <p>{project.synopsis}</p>
+
+              <div className="card-actions justify-left">
+                {project.technologies?.map((tech, index) => (
+                  <div key={index} className="badge badge-base-200">
+                    {tech.name}
+                  </div>
+                ))}
+              </div>
+
               <div className="card-actions justify-center mt-6">
                 {project.github ? (
                   <a
@@ -45,7 +54,6 @@ const ProjectsSection = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary cursor-pointer"
-                    // Evitamos que el clic en el enlace abra la modal
                     onClick={(e) => e.stopPropagation()}
                   >
                     <Github width={20} />
@@ -84,21 +92,42 @@ const ProjectsSection = () => {
                 )}
               </div>
             </div>
-
+  
             {/* Modal de DaisyUI para mostrar detalles del proyecto */}
-            <dialog id={`modal-${project.id}`} className="modal">
-
+            <dialog id={`modal-${project.id}`} className="modal bg-[#18181b]/60 backdrop-blur-md shadow-sm border border-gray-700/50">
               <form method="dialog" className="modal-box">
                 <h3 className="font-bold text-lg">{project.name}</h3>
                 <p className="py-4">{project.description}</p>
-
-                {/* Aquí podrías agregar más detalles o información del proyecto */}
+  
+                {/* Si existen actividades, se muestra el listado */}
+                {project.activity && project.activity.length > 0 && (
+                  <ul className="list rounded-box">
+                    {/* Título del listado */}
+                    <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">
+                      Actividades realizadas
+                    </li>
+                    {project.activity.map((act, index) => (
+                      <li key={index} className="list-row">
+                        <div className="text-4xl font-thin opacity-30 tabular-nums">
+                          {index + 1 < 10 ? `0${index + 1}` : index + 1}
+                        </div>
+                        <div className="list-col-grow">
+                          <div>{act.title}</div>
+                          <div className="text-xs uppercase font-semibold opacity-60">
+                            {act.subtitle}
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+  
                 <div className="modal-action">
                   <button className="btn">Cerrar</button>
                 </div>
               </form>
-
-              {/* Opcional: Si quieres que también se cierre al hacer clic en el backdrop */}
+  
+              {/* Opcional: Si deseas que también se cierre al hacer clic en el backdrop */}
               <form method="dialog" className="modal-backdrop">
                 <button>Cerrar</button>
               </form>
