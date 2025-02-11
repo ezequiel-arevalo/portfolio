@@ -12,11 +12,20 @@ const ContactSection = () => {
         .then(() => {
           setCopySuccess("Correo copiado exitosamente");
           setShowAlert(true);
-          setTimeout(() => setShowAlert(false), 5000);
+          // Ocultamos la alerta y limpiamos el mensaje después de 5000ms
+          setTimeout(() => {
+            setShowAlert(false);
+            setCopySuccess("");
+          }, 5000);
         })
-        .catch(() => setCopySuccess("Error al copiar el correo"));
-
-      setTimeout(() => setCopySuccess(""), 3000);
+        .catch(() => {
+          setCopySuccess("Error al copiar el correo");
+          setShowAlert(true);
+          setTimeout(() => {
+            setShowAlert(false);
+            setCopySuccess("");
+          }, 5000);
+        });
     }
   };
 
@@ -34,7 +43,7 @@ const ContactSection = () => {
         <div className="card-body">
           <h3 className="card-title text-xl font-bold">¡Contáctame!</h3>
           <p className="mb-4">
-            Haz clic en el botón para copiar mi correo electrónico y escribirme.
+            Haz clic en el botón o en el input para copiar mi correo electrónico y escribirme.
           </p>
 
           <div className="join w-full">
@@ -48,8 +57,9 @@ const ContactSection = () => {
                 id="email"
                 type="email"
                 defaultValue="ezequiel.thomas.arevalo@gmail.com"
-                className="input input-bordered w-full ml-2"
+                className="input input-bordered w-full ml-2 cursor-pointer focus:outline-none hover:outline-none active:outline-none hover:border-transparent active:border-transparent border-transparent"
                 readOnly
+                onClick={handleCopyEmail}
               />
             </div>
             <button
@@ -61,7 +71,6 @@ const ContactSection = () => {
               Copiar
             </button>
           </div>
-
         </div>
       </div>
 
