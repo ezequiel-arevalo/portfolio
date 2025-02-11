@@ -38,6 +38,10 @@ const ContactSection = () => {
           </p>
 
           <div className="join w-full">
+            {/* Etiqueta asociada al input para mejorar la accesibilidad */}
+            <label htmlFor="email" className="sr-only">
+              Correo electrónico
+            </label>
             <div className="flex w-full items-center">
               <input
                 ref={emailRef}
@@ -61,7 +65,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      {/* Aquí se muestra el alert en la parte inferior derecha */}
+      {/* Alert que se muestra en la parte inferior derecha */}
       {showAlert && (
         <div
           role="alert"
