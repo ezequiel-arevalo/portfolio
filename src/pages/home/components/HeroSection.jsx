@@ -2,7 +2,7 @@ import { Download, Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen text-white flex items-center justify-center px-6 scroll-mt-24 my-10 sm:my-16 lg:my-24">
+    <section id="home" className="min-h-[70vh] text-white flex items-center justify-center px-6 scroll-mt-24 my-28 sm:my-16 lg:my-24">
       <div className="text-center max-w-3xl">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-6">
           Sistemas modernos{" "}

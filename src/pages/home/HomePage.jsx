@@ -6,13 +6,13 @@ import StatsSection from "./components/StatsSection";
 
 const HomePage = () => {
   return (
-<div className="space-y-24">
-  <HeroSection />
-  <ProjectsSection />
-  <AboutMeSection />
-  <StatsSection />
-  <ContactSection />
-</div>
+    <>
+      <HeroSection />
+      <ProjectsSection />
+      <AboutMeSection />
+      <StatsSection />
+      <ContactSection />
+    </>
   );
 };
 
