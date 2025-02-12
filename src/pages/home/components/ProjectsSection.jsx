@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="text-white min-h-screen flex flex-col items-center justify-center px-6 scroll-mt-28 my-20"
+      className="min-h-screen text-white flex flex-col items-center justify-center px-6 scroll-mt-28 my-10 sm:my-16 lg:my-24"
     >
       <h2 className="text-3xl sm:text-4xl font-bold mb-4">Mis Proyectos</h2>
       <p className="text-lg text-neutral-400 mb-6">
