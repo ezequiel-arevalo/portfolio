@@ -94,31 +94,4 @@ export const projects = [
         github: 'https://github.com/ezequiel-arevalo/CuevanaGames',
         deploy: '',
     },
-    {
-        id: 3,
-        name: 'ChatLand',
-        synopsis: "Aplicación de chat en tiempo real",
-        description: 'ChatLand APP chat in real time',
-        role: 'Colaborador',
-        activity: [
-          {
-            title: 'Diseño UI/UX',
-            subtitle: 'Definición de interfaz y experiencia de usuario.',
-          },
-        ],
-        technologies: [
-          {
-            name: 'Bootstrap 5',
-          },
-          {
-            name: 'PHP',
-          },
-          {
-            name: 'Laravel',
-          },
-        ],
-        image: '',
-        github: 'https://github.com/ezequiel-arevalo/chatland',
-        deploy: '',
-    },
 ]
