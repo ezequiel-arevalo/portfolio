@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ErrorPage = () => {
   return (
     <section
-      className="min-h-screen flex flex-col items-center justify-center text-white px-4"
+      className="min-h-[60vh] flex flex-col items-center justify-center text-white"
       aria-labelledby="error-title"
       role="region"
     >

@@ -6,7 +6,7 @@ const StatsSection = () => {
             Proyectos y experiencia en desarrollo web
         </p>
 
-        <div className="stats stats-vertical lg:stats-horizontal shadow w-fit">
+        <div className="stats stats-vertical glass lg:stats-horizontal shadow w-fit">
             <div className="stat">
                 <div className="stat-title">Proyectos</div>
                 <div className="stat-value">4</div>

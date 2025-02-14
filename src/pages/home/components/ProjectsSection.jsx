@@ -49,6 +49,7 @@ const ProjectsSection = () => {
                   alt={project.name}
                   className="object-cover w-full h-full"
                 />
+                <div className="badge badge-primary badge-md absolute top-2 right-2">Ver más</div>
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{project.name}</h2>

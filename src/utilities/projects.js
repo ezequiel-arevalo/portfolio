@@ -1,37 +1,5 @@
 export const projects = [
     {
-        id: 0,
-        name: 'Portfolio',
-        synopsis: "This portfolio",
-        description: 'Portfolio is a marketlpace',
-        role: 'Dueño',
-        activity: [
-          {
-            title: 'Diseño UI/UX',
-            subtitle: 'Definición de interfaz y experiencia de usuario.',
-          },
-          {
-            title: 'Maquetación y desarrollo web',
-            subtitle: 'Diseño responsive y adaptable.',
-          },
-          {
-            title: 'Accesibilidad y SEO',
-            subtitle: 'Verificación de accesibilidad y aplicación de buenas prácticas.',
-          },
-        ],
-        technologies: [
-          {
-            name: 'TailwindCSS',
-          },
-          {
-            name: 'React',
-          },
-        ],
-        image: '/image/portfolio.webp',
-        github: 'https://github.com/ezequiel-arevalo/portfolio/',
-        deploy: 'https://ezequiel-arevalo.github.io/portfolio/',
-    },
-    {
         id: 1,
         name: 'Aragoge',
         synopsis: "Es un marketplace para atletas y profesionales",
@@ -84,7 +52,7 @@ export const projects = [
         ],
         technologies: [
           {
-            name: 'Bootstrap 5',
+            name: 'TailwindCSS',
           },
           {
             name: 'Vue',
@@ -92,6 +60,30 @@ export const projects = [
         ],
         image:  '/image/cuevana-games.webp',
         github: 'https://github.com/ezequiel-arevalo/CuevanaGames',
+        deploy: '',
+    },
+    {
+        id: 2,
+        name: 'BookStore',
+        synopsis: "BookStore donde se venden juegos",
+        description: 'BookStore marketplce of games',
+        role: 'Colaborador',
+        activity: [
+          {
+            title: 'Diseño UI/UX',
+            subtitle: 'Definición de interfaz y experiencia de usuario.',
+          },
+        ],
+        technologies: [
+          {
+            name: 'Bootstrap 5',
+          },
+          {
+            name: 'Vue',
+          },
+        ],
+        image:  '/image/bookstore.webp',
+        github: 'https://github.com/ezequiel-arevalo/bookstore',
         deploy: '',
     },
 ]
