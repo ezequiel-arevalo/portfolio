@@ -20,3 +20,25 @@ html {
     background-color: #18181b; /* Color exacto equivalente a bg-neutral-950 */
     background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120,119,198,0.3), rgba(255,255,255,0));
 }
+
+/* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
+.c-scroll::-webkit-scrollbar {
+    width: 5px;  /* Ancho vertical */
+    height: 5px; /* Alto para scrollbar horizontal */
+  }
+  
+  .c-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Color de fondo del track */
+  }
+  
+  .c-scroll::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 5px;     /* Bordes redondeados */
+  }
+  
+  /* Para Firefox */
+  .c-scroll {
+    /* 'thin' es la opción más cercana, no permite especificar en px */
+    scrollbar-width: thin;  
+  }
+  
