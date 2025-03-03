@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full">
           {/* Botón de Contacto */}
           <a
-            href="mailto:ezequiel.thomas.arevalo@gmail.com"
+            href="mailto:ezequiel.arevalo@outlook.com"
             className="btn btn-primary flex items-center gap-2 w-full sm:w-auto"
             aria-label="Enviar un correo electrónico a Ezequiel Thomas Arevalo"
           >
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
           {/* Botón de Descargar CV */}
           <a
-            href="/pdf/es/Arevalo_Ezequiel.pdf"
+            href="/pdf/Arevalo_Ezequiel.pdf"
             download="Arevalo_Ezequiel.pdf"
             type="application/pdf"
             rel="noopener noreferrer"
@@ -38,8 +38,6 @@ const HeroSection = () => {
             <Download size={20} aria-hidden="true" />
             Descargar CV
           </a>
-
-          {/* Menú Desplegable de CV */}
         </div>
       </div>
     </section>

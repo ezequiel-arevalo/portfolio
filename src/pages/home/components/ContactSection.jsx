@@ -56,7 +56,7 @@ const ContactSection = () => {
                 ref={emailRef}
                 id="email"
                 type="email"
-                defaultValue="ezequiel.thomas.arevalo@gmail.com"
+                defaultValue="ezequiel.arevalo@outlook.com"
                 className="input input-bordered w-full ml-2 cursor-pointer focus:outline-none hover:outline-none active:outline-none hover:border-transparent active:border-transparent border-transparent"
                 readOnly
                 onClick={handleCopyEmail}

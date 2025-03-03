@@ -44,7 +44,6 @@ const AboutMeSection = () => {
             {/* Tab Educación */}
             <input type="radio" name="about_tabs" className="tab text-center mx-auto" aria-label="Educación" />
             <TimelineTabContent timelineData={education} />
-
           </div>
         </div>
 

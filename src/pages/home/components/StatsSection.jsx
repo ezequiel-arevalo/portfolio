@@ -22,7 +22,7 @@ const StatsSection = () => {
         </p>
       </header>
 
-      <div className="stats stats-vertical glass lg:stats-horizontal shadow w-fit">
+      <div className="stats stats-vertical glass sm:stats-horizontal shadow w-fit">
         {/* Stat de Proyectos */}
         <div
           className="stat cursor-pointer"
